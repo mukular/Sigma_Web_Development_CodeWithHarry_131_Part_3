@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+
+        .boxes *{
+            color: white;
+            border: 2px solid black;
+        }
+
+        .box::first-line{
+            color: rgb(30, 196, 43);
+        }
+
+        [data-color="primary"]
+        {
+            padding-top: 45px;
+        }
+
+        .box:nth-child(even){
+            background-color: rgb(141, 141, 170);
+        }
+
+        .box:nth-last-child(2)
+        {
+            background-color: red;
+        }
+
+        .boxes::before{
+            content: "Harry is good";
+            color: violet;
+        }
+
+        .boxes::after{
+            content: "Sigma course is also good";
+            color: brown;
+        }
+
+        ::selection{
+            background-color:black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 35px;
+        }
+
+        input::placeholder{
+            color:rgb(153, 151, 194);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus placeat optio recusandae cum, nisi repellat deserunt odio mollitia repudiandae dolor esse blanditiis minus culpa eius architecto, nihil vitae laborum iusto officia possimus quod, ut et. Placeat dolore odio nemo. Corporis modi dolorem nostrum obcaecati reprehenderit sunt quam dolore eos ex exercitationem odio rerum architecto tempore, molestias assumenda ut quibusdam dolorum veritatis nesciunt molestiae perferendis esse aspernatur magnam! Quas laborum aperiam ut cumque nihil similique quia voluptates reiciendis laudantium. Doloremque libero assumenda inventore saepe quis repellat, aliquid est eligendi quaerat cupiditate quas et voluptas totam doloribus reprehenderit amet. Cum, provident.</div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet quidem praesentium minima repellat, doloribus maiores est error laborum quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, quaerat esse unde quisquam veritatis fugiat expedita iste. Cumque similique voluptate quaerat dolore optio est tempore dignissimos hic exercitationem dolor mollitia, unde repellat illum expedita quam laborum autem vitae laboriosam inventore! </div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, pariatur voluptatem quam quas inventore suscipit, dolor laudantium ipsum cumque accusamus consequuntur officiis provident libero incidunt repudiandae non consequatur ratione. Vel similique molestiae quae molestias facere voluptatem doloremque impedit tempora possimus! </div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, pariatur voluptatem quam quas inventore suscipit, dolor laudantium ipsum cumque accusamus consequuntur officiis provident libero incidunt repudiandae non consequatur ratione. Vel similique molestiae quae molestias facere voluptatem doloremque impedit tempora possimus! </div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, pariatur voluptatem quam quas inventore suscipit, dolor laudantium ipsum cumque accusamus consequuntur officiis provident libero incidunt repudiandae non consequatur ratione. Vel similique molestiae quae molestias facere voluptatem doloremque impedit tempora possimus! </div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, pariatur voluptatem quam quas inventore suscipit, dolor laudantium ipsum cumque accusamus consequuntur officiis provident libero incidunt repudiandae non consequatur ratione. Vel similique molestiae quae molestias facere voluptatem doloremque impedit tempora possimus! </div>
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, pariatur voluptatem quam quas inventore suscipit, dolor laudantium ipsum cumque accusamus consequuntur officiis provident libero incidunt repudiandae non consequatur ratione. Vel similique molestiae quae molestias facere voluptatem doloremque impedit tempora possimus! </div>
+    </div>
+    <div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptatem maxime. Sint iure et, quae libero, aliquam similique, temporibus obcaecati quisquam in rem voluptatem. Accusantium commodi quasi sequi veniam!
+        </div>
+    </div>
+    <input type="text" placeholder="Type your name here">
+</body>
+</html>

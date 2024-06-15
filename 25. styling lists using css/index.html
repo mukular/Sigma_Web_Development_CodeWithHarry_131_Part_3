@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        div ul li{
+            list-style: devanagari;
+            background-color: blue;
+            list-style-position: inside;
+            border: 2px solid black;
+        }
+
+        .box ul li{
+            list-style: none;
+        }
+
+        .box1 ul li{
+            list-style: devanagari;
+            background-color: blue;
+            list-style-position: inside;
+            border: 2px solid black;
+            list-style-image: url("girl image.png");
+        }
+        .box2 ul li{
+            list-style: devanagari;
+            list-style-type: "🐵";
+            background-color: blue;
+            list-style-position: inside;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="box">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="box1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="box2">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

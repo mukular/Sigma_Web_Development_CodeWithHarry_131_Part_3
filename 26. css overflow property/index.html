@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+
+        .box{
+            width: 30vw;
+            height: 15vh;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+        .box1{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        .box2{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto; /* agar overflow ho toh scroll bar dikha dena warna nhi*/
+        }
+        .box3{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .box4{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .box5{
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .box6{
+            width: 15vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow: auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor sit amet, consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptatem quaerat molestias praesentium aliquam eaque accusamus eius. Itaque, cum eligendi? adipisicing elit. Fugiat ea magnam provident deleni
+    </div>
+    <div class="box1">
+        I am a good boy and I love to write Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ea magnam provident deleniti voluptates facilis quia, numquam excepturi in eaque quae soluta corporis neque eveniet quidem eum maxime officia aut earum sed beatae dolorem reprehenderit? Illo impedit sequi voluptatem omnis? Qui illo maiores eveniet consequatur!
+    </div>
+    <div class="box2">
+        I am a good boy and I love to write Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ea magnam
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia, possimus nostrum aperiam veritatis sapiente quibusdam facilis blanditiis incidunt? Ea consequatur magnam quis laborum facilis distinctio fuga voluptatibus culpa velit deserunt labore, fugit corrupti, obcaecati dolorem sed quam cumque? Fugiat molestiae esse dolores, odit enim dolorem officia! Quidem, provident ut?
+    </div>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia, possimus nostrum aperiam veritatis sapiente quibusdam facilis blanditiis incidunt? Ea consequatur magnam quis laborum facilis distinctio fuga voluptatibus culpa velit deserunt labore, fugit corrupti, obcaecati dolorem sed quam cumque? Fugiat molestiae esse dolores, odit enim dolorem officia! Quidem, provident ut?
+    </div>
+    <div class="box5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia, possimus nostrum aperiam veritatis sapiente quibusdam facilis blanditiis incidunt? Ea consequatur magnam quis laborum facilis distinctio fuga voluptatibus culpa velit deserunt labore, fugit corrupti, obcaecati dolorem sed quam cumque? Fugiat molestiae esse dolores, odit enim dolorem officia! Quidem, provident ut?
+    </div>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia, possimus nostrum aperiam veritatis sapiente quibusdam facilis blanditiis incidunt? Ea consequatur magnam quis laborum facilis distinctio fuga voluptatibus culpa velit deserunt labore, fugit corrupti, obcaecati dolorem sed quam cumque? Fugiat molestiae esse dolores, odit enim dolorem officia! Quidem, provident ut?
+    </div>
+</body>
+</html>
